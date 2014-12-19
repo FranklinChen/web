@@ -29,6 +29,7 @@ object Application extends Controller {
 	          .withQueryString("state" -> "PA")
 	          .withQueryString("city" -> "Pittsburgh")
 	          .withQueryString("text" -> "scala")
+	          .withQueryString("key" -> System.getenv("meetup_api_key"))
 	          .get()
 	    Await.result(result2, 5.second)
 	}
