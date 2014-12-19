@@ -20,7 +20,7 @@ object UsersController extends Controller {
 	        "id" -> optional(number)
 	)(User.apply)(User.unapply))
   	def index = Action {
-		  Ok(views.html.index(Users.all))
+		  Ok("string")
 	}
 	def show(id:Int) = Action {
 		Ok(views.html.users.show(Users.find(id)))
