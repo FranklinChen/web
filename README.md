@@ -1,14 +1,3 @@
-# play-heroku-seed README
-You can try a deployed instance of the app here: https://afternoon-wildwood-5782.herokuapp.com/
-
-This application is meant to make it easier to create a Play application with basic Create, Read, Update and Delete functionality and get it up onto Heroku. Database manipulation is handled by Slick connected to PostgreSQL.
-
-## Getting started
-
-You can deploy your own copy of the app on Heroku using this button:
-
-[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
-
 ### Local development on OSX
 #### Database Setup
 - Install PostgreSQL 9.3 Postgres.app is the easiest way: [postgresapp.com](http://postgresapp.com/)
