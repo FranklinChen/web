@@ -23,11 +23,11 @@ object Application extends Controller {
 	}
 	
 	def foo = {
-	    val holder: WSRequestHolder = WS.url("https://api.meetup.com/2/open_events?&sign=true&photo-host=public&state=PA&city=Pittsburgh&text=scala&page=20")
+	    val holder: WSRequestHolder = WS.url("https://api.meetup.com/2/open_events?&sign=true&photo-host=public&state=PA&zip=15201&text=scala&page=20")
 	    val result2 = holder.withQueryString("sign" -> "true")
 	          .withQueryString("photo-host" -> "public")
 	          .withQueryString("state" -> "PA")
-	          .withQueryString("city" -> "Pittsburgh")
+	          .withQueryString("zip" -> "15201")
 	          .withQueryString("text" -> "scala")
 	          .withQueryString("key" -> System.getenv("meetup_api_key"))
 	          .get()
